@@ -65,7 +65,7 @@ https://www.qwdsa.com/c/threads/serverstatus-rebuild.43
 
 https://git.enjen.net/Munzy/ServerStatus
 
-https://github.com/Munroenet/ServerStatus
+https://github.com/Munzy/ServerStatus
 
 # Utils
 
