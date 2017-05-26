@@ -52,7 +52,7 @@ adduser --quiet --disabled-login --gecos "" serverstatus
 # ======================================
 
 cd /tmp
-wget -q https://raw.githubusercontent.com/Munroenet/ServerStatus/Munzy/uptime.php --no-check-certificate >/dev/null
+wget -q https://git.enjen.net/Munzy/ServerStatus/raw/Munzy/uptime.php  --no-check-certificate >/dev/null
 mv /tmp/uptime.php /home/serverstatus/uptime.php
 chown serverstatus:serverstatus /home/serverstatus/uptime.php
 
