@@ -47,8 +47,8 @@ foreach($servers as $result) {
 						<div class="bar bar-danger" style="width: 100%;"><small>Down</small></div>
 					</div>
 				</td>
-				<td><a href="outages.php?name='.$result["name"].'">'.$result["name"].'</td>
-				<td><a href="outages.php?host='.$result["host"].'">'.$result["host"].'</td>
+				<td><a href="outages.php?name='.$result["name"].'">'.$result["name"].'</a></td>
+				<td><a href="outages.php?host='.$result["host"].'">'.$result["host"].'</a></td>
 				<td>'.$result["type"].'</td>
 				<td>'.$result["location"].'</td>
 				<td id="uptime'.$id.'">n/a</td>
