@@ -4,7 +4,7 @@
 // ========================================================================================================================================
 //
 // By Cameron Munroe ~ Mun
-// Website: https://www.qwdsa.com/converse/threads/serverstatus-rebuild.43/ 
+// Website: https://www.qwdsa.com/threads/serverstatus-rebuild.43/ 
 // Version 0.1a
 //
 //
@@ -17,6 +17,8 @@
 // ========================================================================================================================================
 //                                                                  Settings!
 // ========================================================================================================================================
+
+$apiKey = ''; //Set a key to access this page.
 
 $dl = 10; // At this percent of usage we will show it as RED!
 $wl = 25; // At this percent of usage we will show it as Yellow!
@@ -34,6 +36,21 @@ $loadtime = 0; // the settings are:
 //  0 for 1  minute average
 //  1 for 5  minute average
 //  2 for 15 minute average
+
+
+// ========================================================================================================================================
+//                                                                  Validate API Key
+// ========================================================================================================================================
+
+if(isset($apiKey) && !(isset($_GET['key']))){
+    http_response_code(401);
+    exit("401 Unauthorized.");
+}
+elseif(isset($apiKey) && ($_GET['key'] != $apiKey)){
+    http_response_code(401);
+    exit("401 Unauthorized.");
+}
+
 
 // ========================================================================================================================================
 //                                                                  Getting Data!
@@ -87,6 +104,10 @@ $post['load'] = $internal['load'][$loadtime]; // posting load avg.
 $post['online'] = '<div class="progress"><div class="bar bar-success" style="width: 100%;"><small>Up</small></div></div>';
 // YES WE ARE!
 
+if(isset($apiKey)){
+    $post['apiKey'] = 'Valid';
+}
+
 // ========================================================================================================================================
 //                                                                  Post Data
 // ========================================================================================================================================
@@ -98,20 +119,15 @@ echo json_encode($post); // Time to show the world what we are made of!
 
 // This function determines what color bars we should be using!
 function levels($perc, $dl, $wl){
-    // make nice green bars
-    if($perc < 30) {
-        $width = 30;
-    } else {
-        $width = $perc;
-    }
+
 	if($perc < $dl){
-        $return = '<div class="progress progress-striped active"><div class="bar bar-danger" style="width: ' . $width . '%;">' . $perc . '%</div></div>';
+        $return = '<div class="progress progress-striped active"><div class="bar bar-danger" style="width: ' . $perc . '%;">' . $perc . '%</div></div>';
     }
 	elseif($perc < $wl) {
-        $return = '<div class="progress progress-striped active"><div class="bar bar-warning" style="width: ' . $width . '%;">' . $perc . '%</div></div>';
+        $return = '<div class="progress progress-striped active"><div class="bar bar-warning" style="width: ' . $perc . '%;">' . $perc . '%</div></div>';
     }
 	else { 
-        $return = '<div class="progress progress-striped active"><div class="bar bar-success" style="width: ' . $width . '%;">' . $perc . '%</div></div>';
+        $return = '<div class="progress progress-striped active"><div class="bar bar-success" style="width: ' . $perc . '%;">' . $perc . '%</div></div>';
     }
     return $return;
     

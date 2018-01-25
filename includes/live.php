@@ -4,8 +4,8 @@
 // ========================================================================================================================================
 //
 // By Cameron Munroe ~ Mun
-// Website: https://www.qwdsa.com/converse/threads/serverstatus-rebuild.43/ 
-// Documentation: https://www.qwdsa.com/converse/threads/serverstatus-rebuild.43/
+// Website: https://www.qwdsa.com/threads/serverstatus-rebuild.43/ 
+// Documentation: https://www.qwdsa.com/threads/serverstatus-rebuild.43/
 // Version 0.2
 //
 // This is cross compatable with ServerStatus2 by @mojeda, but will serve no purpose unless used with 

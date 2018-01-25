@@ -42,7 +42,7 @@ apache / nginx / etc.
 
 /scripts/bash/
 
-https://www.qwdsa.com/converse/threads/serverstatus-bash-uptime-php-alternative.55/
+https://www.qwdsa.com/threads/serverstatus-bash-uptime-php-alternative.55/
 
 -or-
 
@@ -52,14 +52,13 @@ apache / nginx / etc.
 
 /scripts/perl/
 
-https://www.qwdsa.com/converse/threads/serverstatus-perl-uptime-php-alternative.56/
+https://www.qwdsa.com/threads/serverstatus-perl-uptime-php-alternative.56/
 
 
 
 # Installation & Guides
 
-
-https://www.qwdsa.com/c/threads/serverstatus-rebuild.43
+https://www.qwdsa.com/threads/serverstatus-rebuild.43
 
 # Main Repos
 

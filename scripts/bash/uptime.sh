@@ -1,7 +1,7 @@
 #!/bin/bash
 ###
 ### uptime.sh: Generate the JSON info required for ServerStatus
-###   https://github.com/Munroenet/ServerStatus
+###   https://github.com/Munzy/ServerStatus
 ###
 ### Copyright 2014 by Davy Chan <imchandave@gmail.com>
 ###

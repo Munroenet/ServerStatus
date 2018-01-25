@@ -4,12 +4,12 @@
 // ================================================================================================================
 //
 //	by: Cameron Munroe ~ Mun
-// 	Website: https://www.qwdsa.com/converse/threads/serverstatus-rebuild.43/ 
+// 	Website: https://www.qwdsa.com/threads/serverstatus-rebuild.43/ 
 // 	rewritten from the original server status script by Bluevm and @mojeda
 //	Ver. 1.1b
 //
 //
-// 	https://raw.githubusercontent.com/Munroenet/ServerStatus/master/uptime.php
+// 	https://raw.githubusercontent.com/Munzy/ServerStatus/master/uptime.php
 //
 // ================================================================================================================
 //													Get Config

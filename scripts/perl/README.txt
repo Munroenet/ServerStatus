@@ -1,3 +1,3 @@
 More info can be found here:
-https://www.qwdsa.com/converse/threads/serverstatus-perl-uptime-php-alternative.56/
+https://www.qwdsa.com/threads/serverstatus-perl-uptime-php-alternative.56/
 

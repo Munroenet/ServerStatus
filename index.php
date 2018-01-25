@@ -9,7 +9,7 @@ else {
 }
 global $sJavascript, $sTable;
 
-	$sJavascript .= '<script type="text/javascript">
+	$sJavascript .= '<script>
 		function uptime() {
 			$(function() {';
 $id = 0;
@@ -47,8 +47,8 @@ foreach($servers as $result) {
 						<div class="bar bar-danger" style="width: 100%;"><small>Down</small></div>
 					</div>
 				</td>
-				<td><a href="outages.php?name='.$result["name"].'">'.$result["name"].'</a></td>
-				<td><a href="outages.php?host='.$result["host"].'">'.$result["host"].'</a></td>
+				<td><a href="outages.php?name='.urlencode($result["name"]).'">'.$result["name"].'</a></td>
+				<td><a href="outages.php?host='.urlencode($result["host"]).'">'.$result["host"].'</a></td>
 				<td>'.$result["type"].'</td>
 				<td>'.$result["location"].'</td>
 				<td id="uptime'.$id.'">n/a</td>

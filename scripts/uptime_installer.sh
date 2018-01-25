@@ -12,8 +12,8 @@
 #
 # ======================================
 # By: Cameron Munroe ~ Mun
-# site: https://www.qwdsa.com/c/threads/serverstatus-rebuild.43/
-# mysite: http://www.cameronmunroe.com/
+# site: https://www.qwdsa.com/threads/serverstatus-rebuild.43/
+# mysite: https://www.cameronmunroe.com/
 #
 # Ver: 1.3
 # ======================================
