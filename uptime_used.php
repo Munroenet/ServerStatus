@@ -18,7 +18,7 @@
 //                                                                  Settings!
 // ========================================================================================================================================
 
-$apiKey = ''; //Set a key to access this page.
+$apiKey = null; //Set a key to access this page.
 
 $dl = 90; // At this percent of usage we will show it as RED!
 $wl = 75; // At this percent of usage we will show it as Yellow!
